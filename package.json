@@ -1,6 +1,6 @@
 {
   "name": "typed-less-modules",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TypeScript type definition generator for LESS CSS Modules",
   "main": "index.js",
   "author": "",
@@ -17,6 +17,11 @@
     "type generator",
     "less modules"
   ],
+  "engines": {
+    "node": "^16.13.x",
+    "yarn": "^1.12.0"
+  },
+  "packageManager": "yarn@1.22.19",
   "scripts": {
     "test": "jest",
     "tlm": "ts-node ./lib/cli.ts",
@@ -51,7 +56,7 @@
     "typescript": "^3.3.3"
   },
   "peerDependencies": {
-    "less": "3.x.x"
+    "less": ">=3.x.x"
   },
   "dependencies": {
     "@types/reserved-words": "^0.1.0",
