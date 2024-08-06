@@ -18,10 +18,9 @@
     "less modules"
   ],
   "engines": {
-    "node": "^16.13.x",
-    "yarn": "^1.12.0"
+    "node": ">=20 <23",
+    "yarn": ">=1.22.18 <2"
   },
-  "packageManager": "yarn@1.22.19",
   "scripts": {
     "test": "jest",
     "tlm": "ts-node ./lib/cli.ts",
@@ -83,5 +82,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "resolutions": {
+    "loader-utils": "^2.0.3"
   }
 }
